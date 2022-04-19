@@ -56,13 +56,13 @@ class Moyai : Plugin() {
                             .setUsage(AudioAttributes.USAGE_MEDIA)
                             .build()
                     )
-                    setDataSource("https://github.com/ItzOnlyAnimal/AliuPlugins/raw/main/boom.ogg")
+                    setDataSource("https://github.com/poob1/AliuPlugins/blob/main/Clown%20Horn%20Sound%20Effect%20(1).mp3?raw=true")
                     prepare()
                     start()
                 }
             }
         } catch (ignored: Throwable) {
-            // nop nop nop nop
+            // yop yop yop yop
         }
     }
 
