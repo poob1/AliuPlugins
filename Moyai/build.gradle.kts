@@ -1,2 +1,2 @@
-version = "1.2.0"
-description = "vine boom"
+version = "1.0"
+description = "clowner"
