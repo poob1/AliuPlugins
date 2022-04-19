@@ -1,4 +1,4 @@
-package me.aniimalz.plugins
+package me.puhbu.plugins
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -35,8 +35,8 @@ class HopOnBloonsWhen : Plugin() {
             val message = Message(this)
             if (CoreUser(message.author).id == StoreStream.getUsers().me.id) return@subscribe
             val content = message.content.lowercase()
-            if (content.contains("hop on bloons") || content.contains("get on bloons") ||
-                content.contains("com.ninjakiwi.bloonstd6")
+            if (content.contains("hop on roblox") || content.contains("get on roblox") ||
+                content.contains("com.roblox.client")
             ) {
                 hopOnBloons()
             }
@@ -46,10 +46,10 @@ class HopOnBloonsWhen : Plugin() {
     private fun hopOnBloons() {
         try {
             val bloons =
-                Utils.appContext.packageManager.getLaunchIntentForPackage("com.ninjakiwi.bloonstd6")
+                Utils.appContext.packageManager.getLaunchIntentForPackage("com.roblox.client")
             Utils.appContext.startActivity(bloons)
         } catch (ignored: Throwable) {
-            // nop nop nop nop
+            // yep yep yep yep
         }
     }
 
